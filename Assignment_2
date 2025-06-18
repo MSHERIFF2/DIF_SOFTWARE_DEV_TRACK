@@ -1,0 +1,9 @@
+Question: What is the difference between undefined and null?
+Answer: 
+
+undefined it is a primitive value that is assigned implicitly by Javascript to a variable that have been declared but
+not initialized.
+
+while null is a primitive value that is  explicitly assigned by a programmer to a variable indicating that a variable has no value
+or no object value and this will
+return null as it value
