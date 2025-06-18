@@ -9,7 +9,77 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
-    background-color:#da1414;
-    border: 2px solid black
+    
+    background-color:#f0f0f0;
+    
 }
+
+#headerSection{
+    width:100%;
+    height:auto;
+    display:flex;    
+    justify-content:space-between;
+    background-color:blue;
+    padding: 2em;
+    color:white;
+     text-align: center;
+   
+}
+
+#colorDisplay label, #scoreSection label{
+    font-size:1.5em;
+    font-weight:bold;
+    display: flex;
+    flex-direction: row;
+    color:#FFA500
+}
+#colorDisplay span, #scoreSection span{
+    font-size:1em;
+    font-weight:bold;
+   
+    
+    
+}
+
+#colorBoxes{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+#colorBoxes .squareBox{
+    width:200px;
+    height:200px;
+    margin:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    color:white;
+    cursor:pointer;
+    border: 2px solid black;
+    background-color: #333;
+}
+
+#resetSection{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+#resetSection button{
+    padding:10px 20px;
+    font-size:1.2em;
+    color:white;
+    background-color:blue;
+    border:none;
+    cursor:pointer;
+}
+#resetSection button:hover{
+    background-color:darkblue;
+}
+
