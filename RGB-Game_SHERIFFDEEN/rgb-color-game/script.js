@@ -1,6 +1,7 @@
 const resetButton = document.getElementById("resetButton");
 const rgbValue = document.getElementById("rgbValue");
-const colorBoxe = document.querySelectorAll(".colorBox");
+const colorBoxe = document.querySelectorAll("#colorBoxes .squareBox");
+const result = document.getElementById("result");
 let colors = [];
 let selectedColor;
 // Function to generate a random RGB color
@@ -32,10 +33,10 @@ function setColors() {
 function checkColor(event) {
     const clickedColor = event.target.style.backgroundColor;
     if (clickedColor === selectedColor) {
-        alert("Correct! You selected the right color.");
+        result.textContent ="Correct! You selected the right color.";
         resetButton.style.display = "block";
     } else {
-        alert("Wrong color! Try again.");
+       result.textContent = "Wrong! Try again.";
         event.target.style.backgroundColor = "#f0f0f0"; // Change to a neutral color
     }
 }
